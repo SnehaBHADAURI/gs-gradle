@@ -1,0 +1,12 @@
+name: sneha
+on:
+  push:
+   branches:
+       - main
+  jobs:
+    build:
+     runs-on: ubuntu-latest
+      steps:
+      - name: Print succes message
+        if: success()
+        run: echo"build succesfull"
